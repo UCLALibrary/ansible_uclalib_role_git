@@ -6,5 +6,20 @@
   failed_when: "git_installed.rc > 1"
   changed_when: "git_installed.rc == 1"
 
+- name: install bash-completion package
+  yum: name=bash-completion state=latest
+
 - include: install.yml
   when: git_installed.stdout == ""
+
+- name: Copy git prompt file
+  copy:
+    src: "git-prompt.sh"
+    dest: "/etc/bash_completion.d/git-prompt"
+    mode: 0755
+
+- name: Copy git prompt profile
+  copy:
+    src: "git-prompt-profile.sh"
+    dest: "/etc/profile.d/"
+    mode: 0755
