@@ -1,5 +1,11 @@
 ---
 
+# Rsync needed for git installer script
+- name: Install rsync
+  package:
+    name: rsync
+    state: present
+
 - name: Copy git installer binary file
   copy:
     src: "git-{{ git_version }}.bin"
