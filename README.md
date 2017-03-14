@@ -1,4 +1,4 @@
-UCLALib Ansible Role: Git
+UCLALib Ansible Role: Git [![Build Status](https://travis-ci.org/UCLALibrary/uclalib_role_git.svg?branch=master)](https://travis-ci.org/UCLALibrary/uclalib_role_git)
 =========
 
 Installs the Git version control application
@@ -37,4 +37,3 @@ License
 -------
 
 BSD
-
