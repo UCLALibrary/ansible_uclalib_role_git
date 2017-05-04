@@ -1,25 +1,22 @@
-UCLALib Ansible Role: Git [![Build Status](https://travis-ci.org/UCLALibrary/uclalib_role_git.svg?branch=master)](https://travis-ci.org/UCLALibrary/uclalib_role_git)
-=========
+# UCLALib Ansible Role: Git [![Build Status](https://travis-ci.org/UCLALibrary/uclalib_role_git.svg?branch=master)](https://travis-ci.org/UCLALibrary/uclalib_role_git)
 
-Installs the Git version control application
+Installs the Git version control application using a pre-built rpm package install script.
 
-Requirements
-------------
+## Requirements
 
-Only supports RHEL-family servers at this time.
+Only supports RHEL-family servers at this time using the pre-built rpm package install script.j
 
-Role Variables
---------------
+The install script name should use the format: `git-1.8.5.5.bin` where 1.8.5.5 is the bundled version of Git.
 
-None.
+## Variables
 
-Dependencies
-------------
+* `git_version` - Defines the version of Git to be installed - this should match the version bundled in the packaged install script
+
+## Dependencies
 
 None.
 
-Example Playbook
-----------------
+## Example Playbook
 
 ```
 ---
@@ -29,11 +26,8 @@ Example Playbook
 
     roles:
       - { role: uclalib_role_git }
-      - { role: uclalib_role_git_app }
-
 ```
 
-License
--------
+## License
 
 BSD
