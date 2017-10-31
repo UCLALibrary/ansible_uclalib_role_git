@@ -4,9 +4,9 @@ Installs the Git version control application using a pre-built rpm package insta
 
 ## Requirements
 
-Only supports RHEL-family servers at this time using the pre-built rpm package install script.j
+Only supports RHEL-family servers at this time using the pre-built rpm package install script.
 
-The install script name should use the format: `git-1.8.5.5.bin` where 1.8.5.5 is the bundled version of Git.
+The install script name should use the format: `git-2.8.6.bin` where 2.8.6 is the bundled version of Git.
 
 ## Variables
 
